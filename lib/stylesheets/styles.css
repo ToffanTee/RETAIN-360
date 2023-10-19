@@ -1,0 +1,76 @@
+/* This styles the main-nav class*/
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* This styles the nav-items*/
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+}
+
+.nav-items li a {
+  text-decoration: none;
+}
+
+/* This styles the sign in button*/
+.signin-btn {
+  text-decoration: none;
+  color: #676869;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid #676869;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+/*This styles the start button*/
+.start-btn {
+  text-decoration: none;
+  background: var(--Linear, linear-gradient(273deg, #c0f 0%, #09f 100%));
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* This styles the toggle/hamburger button */
+.toggle-btn {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000000;
+  display: none;
+}
+
+/* This sets the toggle/hamburger button to display when needed */
+@media only screen and (max-width: 772px) {
+  .toggle-btn {
+    display: block;
+  }
+
+  /* This styles the default underline of anchor tags for these classes*/
+  .nav-items,
+  .signin-btn,
+  .start-btn {
+    display: none;
+  }
+}
+
+/* This styles the text and image of the web page*/
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 40px auto;
+}
+
+.text-div,
+.img-div {
+  width: 50%;
+}
